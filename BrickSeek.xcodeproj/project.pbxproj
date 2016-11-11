@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA11CB901DC2B669000C03E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11CB8F1DC2B669000C03E1 /* AppDelegate.swift */; };
+		DA11CB921DC2B669000C03E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11CB911DC2B669000C03E1 /* ViewController.swift */; };
+		DA11CB951DC2B669000C03E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA11CB931DC2B669000C03E1 /* Main.storyboard */; };
+		DA11CB981DC2B669000C03E1 /* BrickSeek.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA11CB961DC2B669000C03E1 /* BrickSeek.xcdatamodeld */; };
+		DA11CB9A1DC2B669000C03E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA11CB991DC2B669000C03E1 /* Assets.xcassets */; };
+		DA11CB9D1DC2B669000C03E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA11CB9B1DC2B669000C03E1 /* LaunchScreen.storyboard */; };
+		DA11CBA81DC2B669000C03E1 /* BrickSeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11CBA71DC2B669000C03E1 /* BrickSeekTests.swift */; };
+		DA11CBB31DC2B669000C03E1 /* BrickSeekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11CBB21DC2B669000C03E1 /* BrickSeekUITests.swift */; };
+		DA11CBC11DC3013F000C03E1 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11CBC01DC3013F000C03E1 /* InitialViewController.swift */; };
+		DA11CBC31DC3059E000C03E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11CBC21DC3059E000C03E1 /* Constants.swift */; };
+		DA11CBC81DC3150B000C03E1 /* ScanBarCode.png in Resources */ = {isa = PBXBuildFile; fileRef = DA11CBC71DC3150B000C03E1 /* ScanBarCode.png */; };
+		DA583FC91DC9BD5C0006D1BD /* WalmartCheckerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA583FC81DC9BD5C0006D1BD /* WalmartCheckerViewController.swift */; };
+		DA583FCC1DC9BD8F0006D1BD /* TargetCheckerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA583FCB1DC9BD8F0006D1BD /* TargetCheckerViewController.swift */; };
+		DA583FCE1DC9BFCF0006D1BD /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA583FCD1DC9BFCF0006D1BD /* CommonUtils.swift */; };
+		DA583FD01DC9C0B20006D1BD /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA583FCF1DC9C0B20006D1BD /* AppState.swift */; };
+		DA583FD21DCA67980006D1BD /* WalmartScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA583FD11DCA67980006D1BD /* WalmartScannerViewController.swift */; };
+		DA583FD41DCA67A60006D1BD /* TargetScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA583FD31DCA67A60006D1BD /* TargetScannerViewController.swift */; };
+		DA583FD71DCAA7AA0006D1BD /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA583FD61DCAA7AA0006D1BD /* APICall.swift */; };
+		DA583FD91DCAAD020006D1BD /* WalmartAPICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA583FD81DCAAD020006D1BD /* WalmartAPICall.swift */; };
+		DA583FDB1DCAAE650006D1BD /* WalmartSKUCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA583FDA1DCAAE650006D1BD /* WalmartSKUCall.swift */; };
+		DA583FDD1DCAAEE60006D1BD /* TargetSKUCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA583FDC1DCAAEE60006D1BD /* TargetSKUCall.swift */; };
+		DA583FDF1DCAC3E10006D1BD /* ProductPic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA583FDE1DCAC3E10006D1BD /* ProductPic.jpg */; };
+		DA583FE11DCACDF40006D1BD /* SKUResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA583FE01DCACDF40006D1BD /* SKUResultsViewController.swift */; };
+		DA583FE31DCAE2850006D1BD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA583FE21DCAE2850006D1BD /* Extensions.swift */; };
+		DA583FE81DCAE8CA0006D1BD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DA583FE71DCAE8CA0006D1BD /* MBProgressHUD.m */; };
+		DA583FEA1DCB024C0006D1BD /* TargetAPICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA583FE91DCB024C0006D1BD /* TargetAPICall.swift */; };
+		DA6D37D01DCC4D4D00EEEEED /* UPCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6D37CF1DCC4D4D00EEEEED /* UPCCell.swift */; };
+		DA92C10B1DC3EDA600259E53 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92C10A1DC3EDA600259E53 /* ScannerViewController.swift */; };
+		DA92C10D1DC4009B00259E53 /* UPCResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92C10C1DC4009B00259E53 /* UPCResultsViewController.swift */; };
+		DA92C10F1DC4041C00259E53 /* GreyLine.png in Resources */ = {isa = PBXBuildFile; fileRef = DA92C10E1DC4041C00259E53 /* GreyLine.png */; };
+		DAF5973B1DD591AA000E8EC2 /* SKUCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5973A1DD591AA000E8EC2 /* SKUCell.swift */; };
+		F72AEE3476FF1E04F96C7BAC /* Pods_BrickSeek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095B7F237FF0766038711D8B /* Pods_BrickSeek.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA11CBA41DC2B669000C03E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA11CB841DC2B669000C03E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA11CB8B1DC2B669000C03E1;
+			remoteInfo = BrickSeek;
+		};
+		DA11CBAF1DC2B669000C03E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA11CB841DC2B669000C03E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA11CB8B1DC2B669000C03E1;
+			remoteInfo = BrickSeek;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		095B7F237FF0766038711D8B /* Pods_BrickSeek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrickSeek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34E4DD6BAD6A79F87E220DCA /* Pods-BrickSeek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickSeek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrickSeek/Pods-BrickSeek.debug.xcconfig"; sourceTree = "<group>"; };
+		DA11CB8C1DC2B669000C03E1 /* BrickSeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrickSeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA11CB8F1DC2B669000C03E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA11CB911DC2B669000C03E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA11CB941DC2B669000C03E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA11CB971DC2B669000C03E1 /* BrickSeek.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BrickSeek.xcdatamodel; sourceTree = "<group>"; };
+		DA11CB991DC2B669000C03E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA11CB9C1DC2B669000C03E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA11CB9E1DC2B669000C03E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA11CBA31DC2B669000C03E1 /* BrickSeekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrickSeekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA11CBA71DC2B669000C03E1 /* BrickSeekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickSeekTests.swift; sourceTree = "<group>"; };
+		DA11CBA91DC2B669000C03E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA11CBAE1DC2B669000C03E1 /* BrickSeekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrickSeekUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA11CBB21DC2B669000C03E1 /* BrickSeekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickSeekUITests.swift; sourceTree = "<group>"; };
+		DA11CBB41DC2B669000C03E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA11CBC01DC3013F000C03E1 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		DA11CBC21DC3059E000C03E1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DA11CBC71DC3150B000C03E1 /* ScanBarCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScanBarCode.png; sourceTree = "<group>"; };
+		DA583FC81DC9BD5C0006D1BD /* WalmartCheckerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalmartCheckerViewController.swift; sourceTree = "<group>"; };
+		DA583FCB1DC9BD8F0006D1BD /* TargetCheckerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetCheckerViewController.swift; sourceTree = "<group>"; };
+		DA583FCD1DC9BFCF0006D1BD /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		DA583FCF1DC9C0B20006D1BD /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		DA583FD11DCA67980006D1BD /* WalmartScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalmartScannerViewController.swift; sourceTree = "<group>"; };
+		DA583FD31DCA67A60006D1BD /* TargetScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetScannerViewController.swift; sourceTree = "<group>"; };
+		DA583FD61DCAA7AA0006D1BD /* APICall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		DA583FD81DCAAD020006D1BD /* WalmartAPICall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalmartAPICall.swift; sourceTree = "<group>"; };
+		DA583FDA1DCAAE650006D1BD /* WalmartSKUCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalmartSKUCall.swift; sourceTree = "<group>"; };
+		DA583FDC1DCAAEE60006D1BD /* TargetSKUCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetSKUCall.swift; sourceTree = "<group>"; };
+		DA583FDE1DCAC3E10006D1BD /* ProductPic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ProductPic.jpg; sourceTree = "<group>"; };
+		DA583FE01DCACDF40006D1BD /* SKUResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKUResultsViewController.swift; sourceTree = "<group>"; };
+		DA583FE21DCAE2850006D1BD /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DA583FE41DCAE8A50006D1BD /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		DA583FE61DCAE8CA0006D1BD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		DA583FE71DCAE8CA0006D1BD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		DA583FE91DCB024C0006D1BD /* TargetAPICall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetAPICall.swift; sourceTree = "<group>"; };
+		DA6D37CF1DCC4D4D00EEEEED /* UPCCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCCell.swift; sourceTree = "<group>"; };
+		DA92C10A1DC3EDA600259E53 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		DA92C10C1DC4009B00259E53 /* UPCResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCResultsViewController.swift; sourceTree = "<group>"; };
+		DA92C10E1DC4041C00259E53 /* GreyLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreyLine.png; sourceTree = "<group>"; };
+		DAF5973A1DD591AA000E8EC2 /* SKUCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKUCell.swift; sourceTree = "<group>"; };
+		DC8D0A1D216CCE1FBB3CB112 /* Pods-BrickSeek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrickSeek.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrickSeek/Pods-BrickSeek.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA11CB891DC2B669000C03E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72AEE3476FF1E04F96C7BAC /* Pods_BrickSeek.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA11CBA01DC2B669000C03E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA11CBAB1DC2B669000C03E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FBFD28F0DC1958516607BBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				095B7F237FF0766038711D8B /* Pods_BrickSeek.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9223AD2A56CA0A777E0B9696 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34E4DD6BAD6A79F87E220DCA /* Pods-BrickSeek.debug.xcconfig */,
+				DC8D0A1D216CCE1FBB3CB112 /* Pods-BrickSeek.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA11CB831DC2B669000C03E1 = {
+			isa = PBXGroup;
+			children = (
+				DA583FE41DCAE8A50006D1BD /* Bridging-Header.h */,
+				DA11CB8E1DC2B669000C03E1 /* BrickSeek */,
+				DA11CBA61DC2B669000C03E1 /* BrickSeekTests */,
+				DA11CBB11DC2B669000C03E1 /* BrickSeekUITests */,
+				DA11CB8D1DC2B669000C03E1 /* Products */,
+				9223AD2A56CA0A777E0B9696 /* Pods */,
+				3FBFD28F0DC1958516607BBF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DA11CB8D1DC2B669000C03E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA11CB8C1DC2B669000C03E1 /* BrickSeek.app */,
+				DA11CBA31DC2B669000C03E1 /* BrickSeekTests.xctest */,
+				DA11CBAE1DC2B669000C03E1 /* BrickSeekUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA11CB8E1DC2B669000C03E1 /* BrickSeek */ = {
+			isa = PBXGroup;
+			children = (
+				DA11CB8F1DC2B669000C03E1 /* AppDelegate.swift */,
+				DA11CB911DC2B669000C03E1 /* ViewController.swift */,
+				DA11CBC01DC3013F000C03E1 /* InitialViewController.swift */,
+				DA92C10A1DC3EDA600259E53 /* ScannerViewController.swift */,
+				DA92C10C1DC4009B00259E53 /* UPCResultsViewController.swift */,
+				DA6D37CF1DCC4D4D00EEEEED /* UPCCell.swift */,
+				DA583FCA1DC9BD620006D1BD /* Stores */,
+				DA583FC81DC9BD5C0006D1BD /* WalmartCheckerViewController.swift */,
+				DA583FCB1DC9BD8F0006D1BD /* TargetCheckerViewController.swift */,
+				DA583FD11DCA67980006D1BD /* WalmartScannerViewController.swift */,
+				DA583FD31DCA67A60006D1BD /* TargetScannerViewController.swift */,
+				DA583FE01DCACDF40006D1BD /* SKUResultsViewController.swift */,
+				DAF5973A1DD591AA000E8EC2 /* SKUCell.swift */,
+				DA583FD51DCAA77A0006D1BD /* APIs */,
+				DA11CBC41DC305C2000C03E1 /* Helper Files */,
+				DA11CBC51DC305D8000C03E1 /* Storyboard */,
+			);
+			path = BrickSeek;
+			sourceTree = "<group>";
+		};
+		DA11CBA61DC2B669000C03E1 /* BrickSeekTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA11CBA71DC2B669000C03E1 /* BrickSeekTests.swift */,
+				DA11CBA91DC2B669000C03E1 /* Info.plist */,
+			);
+			path = BrickSeekTests;
+			sourceTree = "<group>";
+		};
+		DA11CBB11DC2B669000C03E1 /* BrickSeekUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA11CBB21DC2B669000C03E1 /* BrickSeekUITests.swift */,
+				DA11CBB41DC2B669000C03E1 /* Info.plist */,
+			);
+			path = BrickSeekUITests;
+			sourceTree = "<group>";
+		};
+		DA11CBC41DC305C2000C03E1 /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA11CBC21DC3059E000C03E1 /* Constants.swift */,
+				DA583FCD1DC9BFCF0006D1BD /* CommonUtils.swift */,
+				DA583FCF1DC9C0B20006D1BD /* AppState.swift */,
+				DA583FE21DCAE2850006D1BD /* Extensions.swift */,
+				DA583FE51DCAE8B80006D1BD /* MBProgressHUD-master */,
+			);
+			name = "Helper Files";
+			sourceTree = "<group>";
+		};
+		DA11CBC51DC305D8000C03E1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DA11CB931DC2B669000C03E1 /* Main.storyboard */,
+				DA11CB9B1DC2B669000C03E1 /* LaunchScreen.storyboard */,
+				DA11CB991DC2B669000C03E1 /* Assets.xcassets */,
+				DA11CB9E1DC2B669000C03E1 /* Info.plist */,
+				DA11CB961DC2B669000C03E1 /* BrickSeek.xcdatamodeld */,
+				DA11CBC61DC314C2000C03E1 /* Pictures */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		DA11CBC61DC314C2000C03E1 /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				DA92C10E1DC4041C00259E53 /* GreyLine.png */,
+				DA583FDE1DCAC3E10006D1BD /* ProductPic.jpg */,
+				DA11CBC71DC3150B000C03E1 /* ScanBarCode.png */,
+			);
+			name = Pictures;
+			sourceTree = "<group>";
+		};
+		DA583FCA1DC9BD620006D1BD /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+		DA583FD51DCAA77A0006D1BD /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				DA583FD61DCAA7AA0006D1BD /* APICall.swift */,
+				DA583FD81DCAAD020006D1BD /* WalmartAPICall.swift */,
+				DA583FE91DCB024C0006D1BD /* TargetAPICall.swift */,
+				DA583FDA1DCAAE650006D1BD /* WalmartSKUCall.swift */,
+				DA583FDC1DCAAEE60006D1BD /* TargetSKUCall.swift */,
+			);
+			name = APIs;
+			sourceTree = "<group>";
+		};
+		DA583FE51DCAE8B80006D1BD /* MBProgressHUD-master */ = {
+			isa = PBXGroup;
+			children = (
+				DA583FE61DCAE8CA0006D1BD /* MBProgressHUD.h */,
+				DA583FE71DCAE8CA0006D1BD /* MBProgressHUD.m */,
+			);
+			name = "MBProgressHUD-master";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA11CB8B1DC2B669000C03E1 /* BrickSeek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA11CBB71DC2B669000C03E1 /* Build configuration list for PBXNativeTarget "BrickSeek" */;
+			buildPhases = (
+				B9FD77FCC88C380E3226BDE8 /* [CP] Check Pods Manifest.lock */,
+				DA11CB881DC2B669000C03E1 /* Sources */,
+				DA11CB891DC2B669000C03E1 /* Frameworks */,
+				DA11CB8A1DC2B669000C03E1 /* Resources */,
+				EF42FC765A47DCEACCBE4B1E /* [CP] Embed Pods Frameworks */,
+				9D1242F2C82F1BA2E747C803 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrickSeek;
+			productName = BrickSeek;
+			productReference = DA11CB8C1DC2B669000C03E1 /* BrickSeek.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA11CBA21DC2B669000C03E1 /* BrickSeekTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA11CBBA1DC2B669000C03E1 /* Build configuration list for PBXNativeTarget "BrickSeekTests" */;
+			buildPhases = (
+				DA11CB9F1DC2B669000C03E1 /* Sources */,
+				DA11CBA01DC2B669000C03E1 /* Frameworks */,
+				DA11CBA11DC2B669000C03E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA11CBA51DC2B669000C03E1 /* PBXTargetDependency */,
+			);
+			name = BrickSeekTests;
+			productName = BrickSeekTests;
+			productReference = DA11CBA31DC2B669000C03E1 /* BrickSeekTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA11CBAD1DC2B669000C03E1 /* BrickSeekUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA11CBBD1DC2B669000C03E1 /* Build configuration list for PBXNativeTarget "BrickSeekUITests" */;
+			buildPhases = (
+				DA11CBAA1DC2B669000C03E1 /* Sources */,
+				DA11CBAB1DC2B669000C03E1 /* Frameworks */,
+				DA11CBAC1DC2B669000C03E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA11CBB01DC2B669000C03E1 /* PBXTargetDependency */,
+			);
+			name = BrickSeekUITests;
+			productName = BrickSeekUITests;
+			productReference = DA11CBAE1DC2B669000C03E1 /* BrickSeekUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA11CB841DC2B669000C03E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Harloch;
+				TargetAttributes = {
+					DA11CB8B1DC2B669000C03E1 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DA11CBA21DC2B669000C03E1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DA11CB8B1DC2B669000C03E1;
+					};
+					DA11CBAD1DC2B669000C03E1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DA11CB8B1DC2B669000C03E1;
+					};
+				};
+			};
+			buildConfigurationList = DA11CB871DC2B669000C03E1 /* Build configuration list for PBXProject "BrickSeek" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA11CB831DC2B669000C03E1;
+			productRefGroup = DA11CB8D1DC2B669000C03E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA11CB8B1DC2B669000C03E1 /* BrickSeek */,
+				DA11CBA21DC2B669000C03E1 /* BrickSeekTests */,
+				DA11CBAD1DC2B669000C03E1 /* BrickSeekUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA11CB8A1DC2B669000C03E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA583FDF1DCAC3E10006D1BD /* ProductPic.jpg in Resources */,
+				DA11CB9D1DC2B669000C03E1 /* LaunchScreen.storyboard in Resources */,
+				DA11CB9A1DC2B669000C03E1 /* Assets.xcassets in Resources */,
+				DA11CB951DC2B669000C03E1 /* Main.storyboard in Resources */,
+				DA92C10F1DC4041C00259E53 /* GreyLine.png in Resources */,
+				DA11CBC81DC3150B000C03E1 /* ScanBarCode.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA11CBA11DC2B669000C03E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA11CBAC1DC2B669000C03E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D1242F2C82F1BA2E747C803 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrickSeek/Pods-BrickSeek-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9FD77FCC88C380E3226BDE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF42FC765A47DCEACCBE4B1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrickSeek/Pods-BrickSeek-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA11CB881DC2B669000C03E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA11CBC31DC3059E000C03E1 /* Constants.swift in Sources */,
+				DAF5973B1DD591AA000E8EC2 /* SKUCell.swift in Sources */,
+				DA583FCC1DC9BD8F0006D1BD /* TargetCheckerViewController.swift in Sources */,
+				DA92C10B1DC3EDA600259E53 /* ScannerViewController.swift in Sources */,
+				DA11CB981DC2B669000C03E1 /* BrickSeek.xcdatamodeld in Sources */,
+				DA11CB921DC2B669000C03E1 /* ViewController.swift in Sources */,
+				DA11CB901DC2B669000C03E1 /* AppDelegate.swift in Sources */,
+				DA583FDB1DCAAE650006D1BD /* WalmartSKUCall.swift in Sources */,
+				DA583FE81DCAE8CA0006D1BD /* MBProgressHUD.m in Sources */,
+				DA583FE31DCAE2850006D1BD /* Extensions.swift in Sources */,
+				DA583FDD1DCAAEE60006D1BD /* TargetSKUCall.swift in Sources */,
+				DA583FD21DCA67980006D1BD /* WalmartScannerViewController.swift in Sources */,
+				DA583FD01DC9C0B20006D1BD /* AppState.swift in Sources */,
+				DA583FD41DCA67A60006D1BD /* TargetScannerViewController.swift in Sources */,
+				DA583FCE1DC9BFCF0006D1BD /* CommonUtils.swift in Sources */,
+				DA583FC91DC9BD5C0006D1BD /* WalmartCheckerViewController.swift in Sources */,
+				DA583FEA1DCB024C0006D1BD /* TargetAPICall.swift in Sources */,
+				DA583FD91DCAAD020006D1BD /* WalmartAPICall.swift in Sources */,
+				DA11CBC11DC3013F000C03E1 /* InitialViewController.swift in Sources */,
+				DA583FE11DCACDF40006D1BD /* SKUResultsViewController.swift in Sources */,
+				DA583FD71DCAA7AA0006D1BD /* APICall.swift in Sources */,
+				DA6D37D01DCC4D4D00EEEEED /* UPCCell.swift in Sources */,
+				DA92C10D1DC4009B00259E53 /* UPCResultsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA11CB9F1DC2B669000C03E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA11CBA81DC2B669000C03E1 /* BrickSeekTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA11CBAA1DC2B669000C03E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA11CBB31DC2B669000C03E1 /* BrickSeekUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA11CBA51DC2B669000C03E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA11CB8B1DC2B669000C03E1 /* BrickSeek */;
+			targetProxy = DA11CBA41DC2B669000C03E1 /* PBXContainerItemProxy */;
+		};
+		DA11CBB01DC2B669000C03E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA11CB8B1DC2B669000C03E1 /* BrickSeek */;
+			targetProxy = DA11CBAF1DC2B669000C03E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA11CB931DC2B669000C03E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA11CB941DC2B669000C03E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA11CB9B1DC2B669000C03E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA11CB9C1DC2B669000C03E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA11CBB51DC2B669000C03E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA11CBB61DC2B669000C03E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA11CBB81DC2B669000C03E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34E4DD6BAD6A79F87E220DCA /* Pods-BrickSeek.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = BrickSeek/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harloch.BrickSeek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/dustin/Desktop/BrickSeek/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA11CBB91DC2B669000C03E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC8D0A1D216CCE1FBB3CB112 /* Pods-BrickSeek.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = BrickSeek/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harloch.BrickSeek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/dustin/Desktop/BrickSeek/Bridging-Header.h";
+			};
+			name = Release;
+		};
+		DA11CBBB1DC2B669000C03E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BrickSeekTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harloch.BrickSeekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrickSeek.app/BrickSeek";
+			};
+			name = Debug;
+		};
+		DA11CBBC1DC2B669000C03E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BrickSeekTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harloch.BrickSeekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrickSeek.app/BrickSeek";
+			};
+			name = Release;
+		};
+		DA11CBBE1DC2B669000C03E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BrickSeekUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harloch.BrickSeekUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BrickSeek;
+			};
+			name = Debug;
+		};
+		DA11CBBF1DC2B669000C03E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BrickSeekUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harloch.BrickSeekUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BrickSeek;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA11CB871DC2B669000C03E1 /* Build configuration list for PBXProject "BrickSeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA11CBB51DC2B669000C03E1 /* Debug */,
+				DA11CBB61DC2B669000C03E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA11CBB71DC2B669000C03E1 /* Build configuration list for PBXNativeTarget "BrickSeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA11CBB81DC2B669000C03E1 /* Debug */,
+				DA11CBB91DC2B669000C03E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA11CBBA1DC2B669000C03E1 /* Build configuration list for PBXNativeTarget "BrickSeekTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA11CBBB1DC2B669000C03E1 /* Debug */,
+				DA11CBBC1DC2B669000C03E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA11CBBD1DC2B669000C03E1 /* Build configuration list for PBXNativeTarget "BrickSeekUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA11CBBE1DC2B669000C03E1 /* Debug */,
+				DA11CBBF1DC2B669000C03E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA11CB961DC2B669000C03E1 /* BrickSeek.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA11CB971DC2B669000C03E1 /* BrickSeek.xcdatamodel */,
+			);
+			currentVersion = DA11CB971DC2B669000C03E1 /* BrickSeek.xcdatamodel */;
+			path = BrickSeek.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DA11CB841DC2B669000C03E1 /* Project object */;
+}
