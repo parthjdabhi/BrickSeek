@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class UPCResultsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -89,9 +90,11 @@ class UPCResultsViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.cityField.text = storeStuff["store_address"].string ?? ""
         cell.telephoneField.text = storeStuff["store_phone"].string ?? "-"
         
+        cell.productButton.sd_setImageWithURL(NSURL(string: (storeStuff["store_image"].string ?? "")), forState: .Normal)
+        
         //cell.storeImage.imageView?.imageFromUrl("\(storeStuff["store_image"])")
         
-        cell.productButton.imageView?.imageFromUrl(storeStuff["store_image"].string ?? "")
+        //cell.productButton.imageView?.imageFromUrl(storeStuff["store_image"].string ?? "")
         
         return cell
         

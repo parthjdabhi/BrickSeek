@@ -34,6 +34,11 @@ class APICall {
         Alamofire.request(.GET, upcSearchAPI)
             .responseJSON { response in
                 
+                if let error = response.result.error {
+                    print("response.result.error : \(error)")
+                    return
+                }
+                
                 let json = JSON(response.result.value!)
                 print(json)
                 

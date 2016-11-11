@@ -630,7 +630,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harloch.BrickSeek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/dustin/Desktop/BrickSeek/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -645,7 +645,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harloch.BrickSeek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/dustin/Desktop/BrickSeek/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Bridging-Header.h";
 			};
 			name = Release;
 		};
